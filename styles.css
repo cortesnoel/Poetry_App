@@ -1,0 +1,132 @@
+html,body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5vw;
+  background: wheat;
+  color: darkcyan;
+}
+
+form{
+  margin-top: 5vw;
+}
+
+input{
+  text-align: center;
+}
+
+.center {
+  margin-top: 5vw;
+  text-align: center;
+}
+
+.marginTops{
+  margin-top: 5vw;
+}
+
+.marginSides{
+  margin-left: 5vw;
+  margin-right: 5vw;
+  text-align: center;
+}
+
+.authorListHeader{
+  text-indent: 5vw;
+  text-decoration: underline;
+  font-variant: unicase;
+  font-weight: bold;
+}
+
+.home:hover{
+  text-shadow: 0 0 2vw #FF0000;
+}
+
+.navLink:hover{
+  text-shadow: 0 0 2vw #FF0000;
+}
+
+#menu-bar{
+  background: mediumaquamarine;
+  color: antiquewhite;
+  padding: .2vw;
+  border: .2vw solid midnightblue;
+  border-radius: 1vw;
+}
+
+#menu-bar h1{
+  font-size: 3vw;
+  font-weight: normal;
+  display: inline-block;
+  /*text-shadow: 0 0 12vw #FF0000;*/
+}
+
+#menu-bar ul{
+  float: right;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 2vw;
+  margin-right: 1vw;
+}
+
+#menu-bar li{
+  float: right;
+  margin-left: 20px;
+}
+
+#menu-bar a{
+  color: antiquewhite;
+}
+
+
+#fineText{
+  font-size: .8vw;
+  font-style: italic;
+  margin-bottom: 5vw;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  margin-top: 5vw;
+}
+
+.searchTerm {
+  float: center;
+  text-align: center;
+  width: 50%;
+  margin-left: 5vw;
+  border: .2vw solid #00B4CC;
+  padding: .5vw;
+  height: 2vw;
+  border-radius: 5vw;
+  outline: none;
+  color: #748c81;
+  font-size: 1.5vw;
+  font-family: monospace;
+}
+
+.searchTerm:hover{
+  background-color: #c9f4f9;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+  background-color: #fdfcbc;
+}
+
+.searchButton {
+  position: relative;
+  right: -2vw;
+  width: 5vw;
+  height: 2vw;
+  border: .1vw solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: blanchedalmond;
+  border-radius: 5vw;
+  cursor: pointer;
+  font-size: 1.2vw;
+  font-weight: bold;
+}
+
+.searchButton:hover{
+  background-color: #006673;
+}

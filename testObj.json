@@ -1,0 +1,21 @@
+[{
+  "name":"Hanzo",
+  "belt":"Yellow",
+  "rate":50,
+  "available":true
+},{
+  "name":"Bai-Han",
+  "belt":"Blue",
+  "rate":70,
+  "available":true
+},{
+  "name":"Noob",
+  "belt":"Black",
+  "rate":100,
+  "available":false
+},{
+  "name":"Rain",
+  "belt":"Purple",
+  "rate":90,
+  "available":true
+}]

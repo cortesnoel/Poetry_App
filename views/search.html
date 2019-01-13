@@ -1,0 +1,56 @@
+<div id="formAuthor" class="center search">
+  <p id="error">Try again!</p>
+  <h1>Enter a Poet's name?</h1>
+  <form ng-submit="searchRequest()">
+    <input id="author" class="searchTerm" type="text" placeholder="Enter text here..." ng-model="author.name">
+    <input id="button" class="searchButton" type="submit" value="Find">
+    <!-- <p>{{author.name}}{{author.title}}</p> -->
+  </form>
+</div>
+
+<div id="searchList">
+  <h1 class="authorListHeader">Search Results:</h1>
+
+  <div class="center">
+    <label for="search"></label>
+    <input class="searchTerm" type="text" name="search" placeholder="Search in page..." ng-model="search">
+  </div>
+
+  <div class="marginTops marginSides">
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <th class="center">Id</th>
+          <th class="center">Author</th>
+          <th class="center">Title</th>
+          <th class="center">Line Count</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="data in searchData | orderBy: 'author' | filter: search  track by $index">
+          <td>{{$index+1}}</td>
+          <td>{{data.author}}</td>
+          <td><a ng-href="" ng-click="chooseTitle(data.title, data.author, data.lines)">{{data.title}}</a></td>
+          <td>{{data.linecount}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<!--<div id="formTitle" class="center" >
+  <form ng-submit="choosePoem(data.title, data.author)">
+      <div ng-repeat="data in response">
+          <input type="radio" name="poet" ng-model="author.title" value={{data.title}}>{{data.title}}
+      </div>
+      <input id="button" type="submit" value="Submit">
+  </form>
+</div>-->
+<div id="displayLines" class="center">
+  <span>
+    <h1>{{author.title}}</h1>
+    <p id="fineText">By: {{author.name}}</p>
+  </span>
+  <div ng-repeat="line in author.lines track by $index">
+    <p>{{line}}</p>
+  </div>
+</div>
